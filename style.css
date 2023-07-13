@@ -1,0 +1,120 @@
+:root {
+    font-size: 62.5%;
+    --font-text: 'DM Sans', sans-serif;
+    --font-title: 'Montserrat', sans-serif;
+
+    --background: linear-gradient(315deg, #C2E9FB 0%, #A1C4FD 100%);
+    --dark-blue: #34355B;
+    --light-gray: rgba(52, 53, 91, 0.80);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: var(--background);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.screen1,
+.screen2 {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    width: fit-content;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-family: var(--font-title);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--light-gray);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1.6rem 0 4.8rem;
+}
+
+.try-div {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    background: #DCE2E9;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    color: var(--dark-blue);
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    width: 20%;
+}
+
+input:hover,
+input:focus {
+    border: 3px solid #7879F1;
+    outline: none;
+}
+
+button {
+    background: #7879F1;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem;
+    transition: 0.2s linear;
+}
+
+button:hover {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* screen2 */
+.hide {
+    display: none;
+}
+
+.screen2 h2 {
+    color: var(--dark-blue);
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+    border-radius: 4px;
+}
+
+.warning {
+    margin: 1.6rem 0 0;
+}
+
+@media screen and (max-width:460px) {
+    .screen1,
+    .screen2 {
+        margin: 0 2rem;
+        padding: 3.8rem 4.4rem 5.4rem 4.4rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    input {
+        width: 30%;
+    }
+}
